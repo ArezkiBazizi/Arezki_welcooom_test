@@ -1,0 +1,215 @@
+
+@font-face {
+    font-family: 'Aharoni';
+    src: url('chemin_vers_le_fichier/Aharoni.ttf') format('truetype');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.header{
+    position: relative;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-family: 'Aharoni', sans-serif;
+    text-decoration: none;
+    color: #0056b3;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Barre de navigation */
+
+.navbar {
+    color: #fff;
+    padding: 10px 0;
+    height: var(--nav-height);
+    padding: .65rem 1rem!important;
+    z-index: 9990;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img{
+    width : 30px;
+}
+
+
+.navleftbtn{
+     font-size: 14.4px;
+     color: #373942;
+}
+
+.navrightbtn{
+    font-size: 12.4px;
+    color: #373942;
+}
+.navbar-left {
+    float: left;
+    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
+    align-items: center;
+}
+
+.navbar-right {
+float: right;
+display: flex; 
+align-items: center;
+}
+
+#annonce{
+    display: -item;
+    background-color: #5c7cd8;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    border: 1px solid black
+   ;
+    
+
+}
+
+
+.btn {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+}
+
+.btn H2{
+    margin : auto;
+}
+
+.user-login input[type="text"],
+.user-login input[type="password"] {
+    padding: 8px;
+    margin-right: 5px;
+}
+
+/* Section des résultats de recherche */
+.search-results {
+    margin-top: 20px;
+}
+
+.page{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+/* Pied de page */
+.footer{
+    background-color: #212529;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: relative;
+    bottom: 0px;
+}
+
+.page{
+    flex-grow: 1;
+}
+.banner{
+    height: 10%;
+    width: 100%;
+}
+
+.footer button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.footer button:last-child {
+    margin-right: 0;
+}
+
+.recherche{
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px; /* Pour centrer verticalement */
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espacement égal entre les éléments */
+}
+
+.project {
+    width: calc(33.33% - 20px); /* Largeur de 33.33% avec un espacement de 20px entre les éléments */
+    margin-bottom: 20px; /* Espacement entre les lignes */
+    background-color: #f0f0f0; /* Couleur de fond des projets */
+    padding: 20px;
+    box-sizing: border-box; /* Inclure les marges et les bordures dans la largeur */
+    border: 1px solid #ccc; /* Bordure autour des projets */
+}
+
+.project h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    margin-bottom: 5px;
+}
+
+.footer {
+    background-color: #212529;
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: block;
+}
+
+.footer p{
+        text-align: center;
+}
+.footer button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.footer button:last-child {
+    margin-right: 0;
+}
+
+.footer-right{
+    position: relative;
+left: 0px;
+}
