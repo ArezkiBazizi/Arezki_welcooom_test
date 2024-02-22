@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Welcooom</title>
+    <link rel="stylesheet" href="/src/styles/style.css">
+</head>
+<body>
+
+    <header>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+
+            <!-- La navbar de gauche -->
+            <div class="navbar-left">
+                <a href="index.html" class="logo">
+                    <H1 class="logo">Welcoom</H1>
+                </a>
+                <a href="#">
+                <div class="btn">
+                    <img src="asset/rechercher.png" alt="recherche">
+                    <H2 class="navleftbtn">Rechercher</H2>
+                </div>
+                </a>
+                <a href="#">
+                <div class="btn" id="annonce">
+                    <img src="asset/plus.png" alt="Déposer une annoncer">
+                    <H2 class="navleftbtn">Déposer une annonce</H2>
+                </div>
+                </a>
+            </div>
+
+            <!-- La navbar de droite -->
+            <div class="navbar-right">
+                <div class="btn">
+                    <img src="asset/favorie.png" alt="favoris">
+                    <H2 class="navrightbtn">Favoris</H2>
+                </div>
+                <div class="btn" >
+                    <img src="asset/msg.png" alt="Messages">
+                    <H2 class="navrightbtn">Messages</H2>
+                </div>
+                <div class="btn">
+                    <img src="asset/user.png" alt="se connecter">
+                    <H2 class="navrightbtn">Se connecter</H2>
+                </div>
+                <!--
+                    <input type="text" placeholder="Identifiant">
+                    <input type="password" placeholder="Mot de passe">
+                    <div >
+                        <H2>Se connecter</H2>
+                        <img src="asset/user.png" alt="">
+
+                    </div>
+                </div> -->
+            </div>
+    </nav>
+
+</header>
+
+<div class="page">
+    <div class="banner"></div>
+    <div class="recherche"> 
+    <!-- Formulaire de recherche -->
+        <div class="container">
+            <h2>Résultat de recherche pour :</h2>
+            <form class="search-form">
+                <label for="type_projet">Type projet</label>
+                <select name="type_projet" id="type_projet">
+                    <option value="">Quel type de projet recherchez-vous ?</option>
+                    <!-- Ajoutez d'autres options selon vos besoins -->
+                </select>
+
+                <label for="localisation">Localisation</label>
+                <input type="text" name="localisation" id="localisation" placeholder="Saisissez une ville">
+
+                <button type="submit">Rechercher</button>
+            </form>
+        </div>
+    </div>
+
+    <H1>À la une</H1>
+    <div class="project-list">
+        <!-- Les projets filtrés seront insérés ici par JavaScript -->
+    </div>
+    
+    
+</div>
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-left">
+                <h1>Welcoom</h1>
+                <p>1er site d'annonces immobilières dédié aux projets de logements à participation citoyenne.</p>
+    
+            </div>
+            <div class="footer-right">
+                <button class="btn">Découvrez nos offres</button>
+                <button class="btn">Nous contacter</button>
+                <button class="btn">Mentions légales</button>
+            </div>
+        </div>
+        <p>© 2024 Copyright : LesCityzens</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
