@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p>Prix bientôt disponible</p>
                 <p>${project.logements_disponibles} logements disponibles</p>
                 <p>${project.city}</p>
+                 <span class="heart">&hearts;</span>
             `;
             projectList.appendChild(projectItem);
         });
