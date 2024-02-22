@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 // Filtrer les projets en fonction des critères de recherche
                 const filteredProjects = data.filter(project => {
-                    return (typeProjet === '' || typeProjet === 'tous' || project.type === typeProjet) &&
+                    return (typeProjet === '' || project['type de projet'] === typeProjet) &&
                            (localisation === '' || project.city.toLowerCase().includes(localisation));
                 });
 
