@@ -37,10 +37,10 @@ document.addEventListener('DOMContentLoaded', function() {
             projectItem.classList.add('project');
             projectItem.innerHTML = `
                 <h3>${project.nom}</h3>
-                <p>Prix bientôt disponible</p>
-                <p>${project.logements_disponibles} logements disponibles</p>
+                <h3>${project.prix}</h3>
+                <h3>${project.Typologie}</h3>
+                <h3>${project.List}</h3>
                 <p>${project.city}</p>
-                 <span class="heart">&hearts;</span>
             `;
             projectList.appendChild(projectItem);
         });
