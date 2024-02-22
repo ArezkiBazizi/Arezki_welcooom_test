@@ -125,15 +125,6 @@ align-items: center;
 }
 
 
-.page H1{
-    margin-top: 5%;
-}
-.bar{
-    height: 1px;
-    width: 100%;
-    background-color: black;
-    margin: 10px;
-}
 
 
 .btn {
@@ -209,8 +200,6 @@ align-items: center;
 
 
 .project-list {
-    margin-left: 10%;
-    margin-right: 10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* Espacement égal entre les éléments */
