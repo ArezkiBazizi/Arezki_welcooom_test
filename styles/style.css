@@ -76,6 +76,25 @@ display: flex;
 align-items: center;
 }
 
+.btn {
+    position: relative;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px; /* Hauteur de la ligne */
+    background-color: #fff; /* Couleur de la ligne */
+    transition: width 0.3s; /* Transition pour l'animation */
+}
+
+.btn:hover::after {
+    width: 100%; /* Largeur de la ligne à 100% lors du survol */
+}
+
 #annonce{
     display: -item;
     background-color: #5c7cd8;
