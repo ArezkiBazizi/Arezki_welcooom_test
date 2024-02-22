@@ -36,11 +36,14 @@ document.addEventListener('DOMContentLoaded', function() {
             const projectItem = document.createElement('div');
             projectItem.classList.add('project');
             projectItem.innerHTML = `
-                <h3>${project.nom}</h3>
-                <h3>${project.prix}</h3>
-                <h3>${project.Typologie}</h3>
-                <h3>${project.List}</h3>
-                <p>${project.city}</p>
+                <h2>${project.nom}</h2>
+                <p><strong>Email:</strong> ${project['email du porteur de projet']}</p>
+                <p><strong>Ville:</strong> ${project.city}</p>
+                <p><strong>Prix:</strong> ${project.prix}</p>
+                <p><strong>Date de sortie:</strong> ${project['date de sortie']}</p>
+                <p><strong>Liste:</strong> ${project.list}</p>
+                <p><strong>Date de livraison:</strong> ${project['date de livraison']}</p>
+                <p><strong>Typologie:</strong> ${project.Typologie}</p>
             `;
             projectList.appendChild(projectItem);
         });
